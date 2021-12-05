@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>HOME</title>
+<link rel="stylesheet" type="text/css"
+	href="assets/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css"
+	href="assets/css/bootstrap-theme.min.css" />
+<script src="assets/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap"
+	rel="stylesheet">
+<style>
+@import
+	url('https://fonts.googleapis.com/css2?family=Cambo&display=swap');
+
+body {
+	background-image: url('covid.jpg');
+	background-position:;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50%;
+	background-color: #000000;
+	font-family: 'Baloo Bhai 2', cursive;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.container {
+	margin-top: 25px;
+	text-align: center;
+	display: inline-block;
+	box-shadow: 12px 12px 12px 0px #000000;
+	width: 410px;
+	padding: 40px;
+	background-color: #000000c4;
+}
+
+.admin {
+	text-align: right;
+	padding-right: 25px;
+	color: #003380;
+	font-size: 18px;
+	font-weight: 900;
+}
+
+a {
+	color: #ffffff;
+	text-shadow: 4px 4px 2px black;
+	padding: 10px;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #b5e7a0;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.header1 {
+	background-color: #010b34;;
+	box-shadow: 6px 8px 20px 0px #000000;
+	padding: 18px;
+}
+
+.heading1 {
+	color: rgb(255, 255, 255);
+	text-align: center;
+	text-shadow: 4px 4px 2px black;
+	padding-bottom: 20px;
+}
+
+.heading2 {
+	color: rgb(255, 255, 255);
+	text-align: center;
+	text-shadow: 4px 4px 2px black;
+}
+
+.button1 {
+	padding: 5px;
+	width: 147px;
+	background-color: #00083ead;
+	color: #fff;
+}
+
+.input1 {
+	padding: 7px;
+	width: 236px;
+	box-shadow: 0 4px 8px 0 rgb(0 0 0/ 20%), 0 6px 20px 0 rgb(0 0 0/ 19%);
+	color: black;
+	font-size: 15px;
+}
+
+.images {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.img1 {
+	width: 50px;
+	border-radius: 50%;
+	border: thin solid #cce;
+	box-shadow: 9px 9px 5px 0px black;
+}
+
+.modal {
+	z-index: 1;
+	display: none;
+	padding-top: 10px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+	margin: auto;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.modal-hover-opacity {
+	opacity: 1;
+	filter: alpha(opacity = 100);
+}
+
+.modal-hover-opacity:hover {
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+.close {
+	text-decoration: none;
+	float: right;
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+}
+
+.button {
+	background-color: #010b34;;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding: 20px 34px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button1 {
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.button1:hover {
+	background-color: green;
+}
+
+.footer {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.image {
+	display: inline-block;
+	position: absolute;
+	left: 38px;
+	top: 9px;
+}
+
+.image img {
+	width: 36px;
+	filter: invert(100%);
+}
+
+.container1 {
+	width: 140px;
+	display: inline-block;
+	text-align: center;
+}
+
+.modal-content, #caption {
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+.modal-hover-opacity:hover {
+	background-color: green;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+-webkit-keyframes zoom {from { -webkit-transform:scale(0);
+	
+}
+
+to {
+	-webkit-transform: scale(1);
+}
+
+}
+@
+keyframes zoom {from { transform:scale(0);
+	
+}
+
+to {
+	transform: scale(1);
+}
+}
+</style>
+
+<script>
+	function onClick(element) {
+		document.getElementById("img01").src = element.src;
+		document.getElementById("modal01").style.display = "block";
+	}
+</script>
+</head>
+
+<body>
+
+	<header class="header1">
+		<div class="image">
+
+			<img src="logo.png">
+
+
+		</div>
+
+		<div class="admin">
+			<a href="http://localhost:3000/"> World Covid Tracker </a> <a
+				href="adminLogIn.html"> Admin Login </a>
+
+		</div>
+	</header>
+
+
+	<div class="text-center">
+
+		<div class="container">
+			<h2 class="text text-center heading1">Register for Vaccination</h2>
+			<form name="loginForm" id="loginForm" action="userregistered"
+				method="post">
+				<div>
+					<label for="aadharnumber">
+						<h4 class="heading2">Aadhar Number</h4>
+					</label><br /> <input class="input1" type="number" name="aadharnumber"
+						id="aadharnumber" minlength="12" maxlength="12"
+						placeholder="Enter 12 Digit Aadhar Number" required /><br /> <label
+						for="mobilenumber">
+						<h4 class="heading2">Mobile Number</h4>
+					</label><br /> <input class="input1" type="number" name="mobilenumber"
+						id="mobilenumber" pattern="[0-9]{10}"
+						placeholder="Enter 10 Digit Mobile Number" required /><br /> <br />
+					<input class="button1" type="submit" value="Register" name="Submit" /><br />
+				</div>
+			</form>
+		</div>
+
+	</div>
+	<div class="images">
+		<div class="container1">
+			<img class="img1" src="./recover.jpg"
+				style="max-width: 100%; cursor: pointer" onclick="onClick(this)"
+				class="modal-hover-opacity" />
+		</div>
+		<div class="container1">
+			<img class="img1" src="./mucor.jpg "
+				style="max-width: 100%; cursor: pointer" onclick="onClick(this)"
+				class="modal-hover-opacity" />
+		</div>
+		<div class="container1">
+			<img class="img1" src="./vaccination.jpg"
+				style="max-width: 100%; cursor: pointer" onclick="onClick(this)"
+				class="modal-hover-opacity" />
+		</div>
+		<div class="container1">
+			<img class="img1" src="./strengthImmu.jpg"
+				style="max-width: 100%; cursor: pointer" onclick="onClick(this)"
+				class="modal-hover-opacity" />
+		</div>
+		<div class="container1">
+			<img class="img1" src="./materilsRequired.jpg"
+				style="max-width: 100%; cursor: pointer" onclick="onClick(this)"
+				class="modal-hover-opacity" />
+		</div>
+
+		<div id="modal01" class="modal" onclick="this.style.display='none'">
+			<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<div class="modal-content">
+				<img id="img01" style="max-width: 100%" />
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<a href="http://localhost:3001/" class="button">ChatBot</a>
+	</div>
+</body>
+
+</html>

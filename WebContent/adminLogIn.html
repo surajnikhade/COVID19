@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Portal</title>
+<link rel="stylesheet" type="text/css"
+	href="assets/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css"
+	href="assets/css/bootstrap-theme.min.css" />
+<script src="assets/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap"
+	rel="stylesheet">
+<style>
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Cambo&display=swap');
+
+body {
+	background-image: url('admin.jpg');
+	background-position: right;
+	background-repeat: no-repeat;
+	height: 100%;
+	font-family: 'Baloo Bhai 2', cursive;
+}
+
+.container {
+	margin-top: 60px;
+	margin-left: 120px;
+	text-align: center;
+	display: inline-block;
+	box-shadow: 6px 8px 20px 0px #000000;
+	width: 410px;
+	padding: 65px;
+	background-color: #0c0c0c8c;
+}
+
+.admin {
+	text-align: right;
+	padding-right: 25px;
+	color: #003380;
+	font-size: 18px;
+	font-weight: 900;
+}
+
+a {
+	color: #ffffff;
+	text-shadow: 4px 4px 2px black;
+	padding: 10px;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #b5e7a0;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.header1 {
+	background-color: #0c0c0c8c;
+	box-shadow: 6px 8px 20px 0px #000000;
+	padding: 18px;
+}
+
+.heading1 {
+	color: rgb(255, 255, 255);
+	text-align: center;
+	text-shadow: 4px 4px 2px black;
+	padding-bottom: 20px;
+}
+
+.heading2 {
+	color: rgb(255, 255, 255);
+	text-align: center;
+	text-shadow: 4px 4px 2px black;
+}
+
+.button1 {
+	padding: 5px;
+	width: 147px;
+	background-color: #00083ead;
+	color: #fff;
+}
+
+.input1 {
+	padding: 7px;
+	width: 236px;
+	box-shadow: 0 4px 8px 0 rgb(0 0 0/ 20%), 0 6px 20px 0 rgb(0 0 0/ 19%);
+	color: black;
+	font-size: 15px;
+}
+
+.image {
+	display: inline-block;
+	position: absolute;
+	left: 38px;
+	top: 9px;
+}
+
+.button1 {
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.button1:hover {
+	background-color: green;
+}
+
+.image img {
+	width: 36px;
+	filter: invert(100%);
+}
+</style>
+</head>
+<body>
+	<header class="header1">
+		<div class="image">
+
+			<img src="logo.png">
+
+
+		</div>
+		<div class="admin">
+
+			<a href="index.html"> Register for Vaccine </a>
+
+		</div>
+	</header>
+	<div>
+
+		<div class="container">
+			<h2 class="text text-center heading1">Admin Login</h2>
+			<form name="registrationForm" id="registrationForm"
+				action="adminlogedin" method="post">
+
+				<label for="loginid">
+					<h4 class="heading2">Login ID</h4>
+				</label><br /> <input class="input1" type="text" name="loginid"
+					id="loginid" placeholder="Enter Admin Login ID" required /><br />
+
+				<label for="Password">
+					<h4 class="heading2">Password</h4>
+				</label><br /> <input class="input1" type="password" name="Password"
+					id="Password" placeholder="Enter Admin Password" required /><br />
+				<br /> <input class="button1" type="submit" value="Login"
+					name="Submit" /><br />
+
+			</form>
+		</div>
+	</div>
+</body>
+</html>
